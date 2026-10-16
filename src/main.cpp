@@ -39,7 +39,7 @@ void setup() {
         Serial.println("OLED: FAIL (check the 7 OLED wires)");
     }
 
-/*
+
     // Stage 2: I2C scan (expect 0x60, 0x68, 0x76)
     Wire.begin(I2C_SDA, I2C_SCL);
     Serial.print("I2C devices:");
@@ -49,7 +49,7 @@ void setup() {
         if (Wire.endTransmission() == 0) {Serial.printf(" 0x%02X", a); found++;}
     }
     Serial.printf(" (%d found; Stage 2 expects 0x60 0x68 0x76)\n", found);
-*/
+
 
 /*
     // Stage 3: servo sweep 0 -> 180 -> 90 degrees (16-bit, 50 Hz)
