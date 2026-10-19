@@ -50,8 +50,6 @@ void setup() {
     }
     Serial.printf(" (%d found; Stage 2 expects 0x60 0x68 0x76)\n", found);
 
-
-/*
     // Stage 3: servo sweep 0 -> 180 -> 90 degrees (16-bit, 50 Hz)
     ledcSetup(2, 50, 16); // channel 2: tone() uses channel 0
     ledcAttachPin(SERVO_PWM, 2);
@@ -59,8 +57,7 @@ void setup() {
     for (int d : dutyFor) { ledcWrite(2, d); delay(700);}
     Serial.println("Servo: did it sweep and stop in the middle? (Stage 3)");
     Serial.println("Now press the buttons and turn the pot:");
-*/
-}
+}                                                   
 
 void loop() {
     int pot = analogRead(POT_ADC);
